@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Outfit&family=Quicksand&display=swap');
+
+:root {
+    --main-font: 'Quicksand', sans-serif;
+}
+
+.header--holder {
+    width:30%;
+    min-height:10%;
+    box-shadow: 0px 0px 6px -3px;
+    border-radius:15px;
+    margin-top:2%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size:1vw;
+}
+
+.header--button {
+    height:40%;
+    width:20%;
+    border-radius:10px;
+    background-color:rgb(39, 37, 37);
+    border:transparent;
+    font-family: var(--main-font);
+    color:white;
+    font-weight:600;
+    font-size:1em;
+    cursor:pointer;
+}
+
+.header--button:hover {
+    border: 2px solid rgb(39, 37, 37);
+    background-color:white;
+    color: rgb(39, 37, 37);
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.10);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.body--container {
+    width:95%;
+    height: max-content;
+    margin-top:2em;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 2em 2em;
+}
+
+.card--container {
+    width:20%;
+    height: 16em;
+    border-radius:20px;
+    box-shadow: 0px 0px 6px -3px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.font--title {
+    font-family: var(--main-font)
+}
+
+.card--image {
+    height:70%;
+}
+
+.card--container:hover {
+    cursor:pointer;
+    animation: pulse 1s infinite;
+    box-shadow: 0px 0px 6px -1px rgb(135, 209, 249);
+}
+
+.score--table {
+    width:30%;
+    margin-top:1em;
+    height:max-content;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+}
+
+.score {
+    width:40%;
+    min-height:75px;
+    background-color:white;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-family: var(--main-font);
+    font-size:1.25vw;
+    box-shadow: 0px 0px 5px -3px;
+}
+
+.score:hover {
+    box-shadow: inset 0px 0px 5px -3px;
+    border: 2px solid rgb(156, 156, 156);
+}
+
+.dialog-info {
+    margin-right: 0.5em;
+    cursor:pointer;
+}
+
+#info-dialog {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 35%;
+    width:40%;
+    padding: 0em 7em 0em 7em;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.dialog--button {
+    height:20%;
+    width:20%;
+    padding:0.5em;
+    font-family: var(--main-font);
+    font-size:1vw;
+    border-radius:10px;
+    border: 2px solid rgb(39, 37, 37);
+    cursor:pointer;
+    background-color: white;
+}
+
+.dialog--button:hover {
+    background: rgb(39, 37, 37);
+    color:white;
+}
+
+.diaEl {
+    margin-top:1em;
+}
